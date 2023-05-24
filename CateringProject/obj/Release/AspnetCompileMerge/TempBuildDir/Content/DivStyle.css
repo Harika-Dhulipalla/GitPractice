@@ -1,0 +1,13 @@
+﻿.parent{
+    border:1px solid;
+}
+.child1 {
+    width:50%;
+    float: left;
+    background-color: #842424;
+}
+.child2 {
+    width: 50%;
+    float: left;
+    background-color:#1dcccc;
+}

@@ -1,0 +1,77 @@
+﻿@model CateringProject.Models.OrderModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/CateringLayout.cshtml";
+}
+
+<link href="~/Content/MainStyle.css" rel="stylesheet" />
+@using (Html.BeginForm())
+{
+    <div class="bg">
+        <img src="~/images/chefff.png" class="img5" />
+        <div class="div1">
+            <center>
+                <img src="~/images/orderf.png" class="img2" />
+                <p class="p6">Book Our Services</p>
+            </center>
+            <hr />
+            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "label1" })
+            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "validator" })
+            @Html.LabelFor(model => model.CreatedDate, htmlAttributes: new { @class = "label3" })
+            @Html.ValidationMessageFor(model => model.CreatedDate, "", new { @class = "validator" })
+            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "textbox2" } })
+            @Html.EditorFor(model => model.CreatedDate, new { htmlAttributes = new { @class = "textbox1" } })
+            @Html.LabelFor(model => model.PhoneNo, htmlAttributes: new { @class = "label2" })
+            @Html.ValidationMessageFor(model => model.PhoneNo, "", new { @class = "validator" })
+            @Html.LabelFor(model => model.EmailId, htmlAttributes: new { @class = "label4" })
+            @Html.ValidationMessageFor(model => model.EmailId, "", new { @class = "validator" })
+            @Html.EditorFor(model => model.PhoneNo, new { htmlAttributes = new { @class = "textbox2" } })
+            @Html.EditorFor(model => model.EmailId, new { htmlAttributes = new { @class = "textbox1" } })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Order Now" class="btn" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="div4">
+            <div class="div6">
+                <img src="~/images/cupf.jpg" class="img1" />
+                <p class="p4">Good Rest</p>
+                <p class="p5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="div6">
+                <img src="~/images/food.png" class="img1" />
+                <p class="p4">Best Cuisine</p>
+                <p class="p5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="div3">
+            <p class="p1">Best One</p>
+            <p class="p2">Our Services</p>
+            <hr class="hr1" />
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                The point of using lorem ipsum is that it has a more-or-less normal dustribution of letters or opposed to using "content here content here"
+                making it look like readable English.
+            </p>
+            <p class="p3">Read More</p>
+        </div>
+        <div class="div5">
+            <div class="div7">
+                <img src="~/images/timef.jpg" class="img1" />
+                <p class="p4">24/7</p>
+                <p class="p5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="div7">
+                <img src="~/images/platef.jpg" class="img1" />
+                <p class="p4">Special Event Catering</p>
+                <p class="p5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    </div>
+}
+
+
